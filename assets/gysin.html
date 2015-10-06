@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="assets/js/dream-machine.js"></script>
+	<style type="text/css"></style>
+</head>
+
+<body bgcolor="#ffffff">
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<a href="#" onclick="start();">Start</a>
+				</td>
+				<td rowspan="2" align="CENTER">
+					<span id="sp" style="background-color: #ffffff">10hz</span>
+				</td>
+				<td align="RIGHT">
+					<a href="#" onclick="stop();">Stop</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#" onclick="if(speed > 1) speed--; disp(); restart();">&lt;&lt; 
+Slower</a>
+				</td>
+				<td align="RIGHT">
+					<a href="#" onclick="speed++; disp(); restart();">Faster &gt;&gt;</a>
+				</td>
+			</tr>
+			<tr>
+				<td align="CENTER" colspan="3">
+					<a href="#" onclick="setcolor(255, 255, 255, 0);">White</a>
+					<a href="#" onclick="setcolor(255, 0, 0, 0);">Red</a>
+					<a href="#" onclick="setcolor(0, 255, 0, 0);">Green</a>
+					<a href="#" onclick="setcolor(0, 0, 255, 0);">Blue</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<div></div>
+</body>
+
+</html>
